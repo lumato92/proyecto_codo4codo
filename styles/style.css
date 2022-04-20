@@ -1,0 +1,236 @@
+
+/* Global Configs*/
+*{
+    
+    padding: 0;
+    margin: 0;
+
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    background-color: #f1f1f1;
+}
+
+a{
+    text-decoration: none;
+    color: #222;
+
+}
+li{
+    list-style: none;
+}
+
+/* Header Configs */
+
+header{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-family: sans-serif;
+    line-height: 50px;
+    background-color: olive;
+
+}
+
+.brand{
+    width: auto;
+    height: 100%;
+    float: left;
+    margin-left: 5%;
+}
+
+/* Navbar Configs */
+
+.main-nav-bar{
+    width: 60%;
+    height: 100%;
+    float:right;
+
+}
+
+ .main-nav-bar .nav-opt{
+    width: 100;
+    height: inherit;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.main-nav-bar ul li  {
+    width: 20%;
+    height: inherit;
+    display: inline-block;
+}
+
+
+#menuToggle{
+    display: none;
+}
+.menu-icon{
+    display: none;
+}
+
+/* como hago para que funcione bien? */
+a, li:hover{
+    background-color: #222;
+    font-size: larger;
+    color: #f1f1f1;
+}
+
+/* titulo principal */
+
+.main-title{
+    
+    width: 100%;
+    height: 35%;
+    background-color: beige;
+    text-align: center;
+}
+.main-title h1{
+    
+
+}
+
+/* contenido  */
+
+.content{
+    display: flex;
+    width: 100%;
+    height: 25em;
+    background-color: aquamarine;
+    flex-direction: row-reverse;
+    margin-bottom: 1%;
+}
+
+.box {
+    width: 33%;
+    height: inherit;
+    margin-left: 1%;
+    margin-right: 1%;
+    background-color: red;
+
+}
+
+.box h2{
+    text-align: center;
+}
+
+.box p{
+    text-align: justify;
+ 
+}
+
+
+
+.box:hover{
+    background-color: black;
+    color:white;
+    font-size: large;
+    transition: all .5s;
+}
+
+.main-content{
+    display: block;
+    background-color: blueviolet;
+    width: 100%;
+    height: 50em;
+    margin-left: 0.625rem;
+    margin-right: 0.625rem;
+}
+.main-content h2{
+    text-align: center;
+}
+
+.main-page-services{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    background-color: bisque;
+
+}
+.main-page-services-article{
+    margin-left: 0.625rem;
+    margin-right: 0.625rem;
+    background-color: green ;
+    height: fit-content;
+}
+
+.main-page-services-article-title{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+/* RESPONSIVE MOVIL */
+
+
+
+@media screen and (max-width:768px){
+    .main-nav-bar{
+        width: 100%;
+        height: auto;
+
+    }
+
+    .main-nav-bar .nav-opt{
+        display: flex;
+        flex-direction: column;
+        
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height .3s;
+    }
+
+    .main-nav-bar ul li  {
+        text-align: center;
+        width: 100%;
+        height: 50px;
+        background-color: olive;
+        padding: 10px 0px 10px 5%;
+    }
+    .menu-icon {
+        width: 100px;
+        height: inherit;
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        line-height: 60px;
+    }
+
+    #menuToggle:checked ~ ul {
+        max-height: 350px;
+        
+    }
+    .menu-icon i {
+        font-size: 1.7em;
+    }
+
+    .content{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        background-color: aquamarine;
+        flex-direction: column;
+        transition: all .5s;
+
+    
+    }
+    
+    .box {
+        width: 100%;
+        height: 40%;
+        margin: 1%;
+        background-color: red;
+    }
+}
+    
+
