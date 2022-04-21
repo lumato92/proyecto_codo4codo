@@ -1,0 +1,45 @@
+
+
+.btn-service {
+  border-radius: 30px;
+  background-color: #5ca1e1;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-size: 1em;
+  padding: 1em;
+  width: 150px;
+  transition: all 0,0s;
+  cursor: pointer;
+  margin: 36px;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+}
+
+.btn-service{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn-service:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;  
+  top: 16px;
+  right: 20px;
+  transition: 0,5s;
+}
+
+.btn-service:hover{
+  padding-right: 2em;
+  padding-left :0.2em;
+  background-color: aquamarine;
+  color: black;
+}
+
+.btn-service:hover:after {
+  opacity: 1;
+  right: 10px;
+}
+

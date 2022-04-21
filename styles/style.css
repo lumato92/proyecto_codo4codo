@@ -16,7 +16,7 @@ html, body{
 
 a{
     text-decoration: none;
-    color: #222;
+    color:black;
 
 }
 li{
@@ -52,7 +52,7 @@ header{
 }
 
  .main-nav-bar .nav-opt{
-    width: 100;
+    width: 100%;
     height: inherit;
     margin: 0;
     padding: 0;
@@ -66,6 +66,7 @@ header{
 }
 
 
+
 #menuToggle{
     display: none;
 }
@@ -73,10 +74,12 @@ header{
     display: none;
 }
 
+
+
 /* como hago para que funcione bien? */
-a, li:hover{
+ a,.nav-opt-box:hover{
     background-color: #222;
-    font-size: larger;
+    font-size: large;
     color: #f1f1f1;
 }
 
@@ -136,7 +139,7 @@ a, li:hover{
     display: block;
     background-color: blueviolet;
     width: 100%;
-    height: 50em;
+    height: 90%;
     margin-left: 0.625rem;
     margin-right: 0.625rem;
 }
@@ -149,24 +152,35 @@ a, li:hover{
     flex-wrap: nowrap;
     flex-direction: row;
     background-color: bisque;
+    width: 100%;
+    height: 70%;
 
 }
 .main-page-services-article{
-    margin-left: 0.625rem;
-    margin-right: 0.625rem;
+    display: flex;
+    flex-direction: column;
     background-color: green ;
-    height: fit-content;
+    height: 100%;
+    width: 24%;
+    margin-left: .5rem;
+    margin-right: .5rem
+    ;
+    border: 1px solid black;
+
 }
 
 .main-page-services-article-title{
     text-align: center;
 }
+.main-page-services-article-img{
+    width: 100%;
+}
 
-
-
-
-
-
+.btn-service{
+    position: absolute;
+    top: 20%;
+    left: 25%;
+}
 
 
 /* RESPONSIVE MOVIL */
@@ -231,6 +245,54 @@ a, li:hover{
         margin: 1%;
         background-color: red;
     }
+    .main-content{
+        display: block;
+        background-color: blueviolet;
+        width: 100%;
+        height: 90%;
+        margin-left: 0.625rem;
+        margin-right: 0.625rem;
+    }
+    .main-content h2{
+        text-align: center;
+    }
+    
+    .main-page-services{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        background-color: bisque;
+        width: 100%;
+        height: 70%;
+    
+    }
+    .main-page-services-article{
+        display: flex;
+        flex-direction: column;
+        background-color: green ;
+        height: 100%;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 1%;
+        border: 1px solid black;
+    
+    }
+    
+    .main-page-services-article-title{
+        text-align: center;
+    }
+    .main-page-services-article-img{
+        width: 100%;
+    }
+    
+    .main-page-services-article .btn-service{
+        position: relative;
+        top: 1%;
+        left: 30%;
+    }
+    
+
 }
     
 
