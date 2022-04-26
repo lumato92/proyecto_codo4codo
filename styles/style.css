@@ -45,7 +45,7 @@ header{
 /* Navbar Configs */
 
 .main-nav-bar{
-    width: 60%;
+    width: 30%;
     height: 100%;
     float:right;
 
@@ -60,7 +60,7 @@ header{
 }
 
 .main-nav-bar ul li  {
-    width: 20%;
+    width: 25%;
     height: inherit;
     display: inline-block;
 }
@@ -88,7 +88,7 @@ header{
 .main-title{
     
     width: 100%;
-    height: 35%;
+    height: 15%;
     background-color: beige;
     text-align: center;
 }
@@ -149,22 +149,24 @@ header{
 
 .main-page-services{
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-around;
     background-color: bisque;
     width: 100%;
-    height: 70%;
+    height: auto;
 
 }
 .main-page-services-article{
+
+    position: relative;
     display: flex;
     flex-direction: column;
     background-color: green ;
     height: 100%;
     width: 24%;
-    margin-left: .5rem;
-    margin-right: .5rem
-    ;
+    flex-grow: 1;
+    margin: 2vh;
     border: 1px solid black;
 
 }
@@ -176,11 +178,77 @@ header{
     width: 100%;
 }
 
-.btn-service{
+    
+ .btn-service{
     position: absolute;
-    top: 20%;
-    left: 25%;
+    top: 20px;
+    left: 50px;
 }
+
+/* Ubicacion */
+
+.location-info{
+    display: flex;
+    
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.location-page h3{
+    text-align: left;
+    margin-top: 2%;
+    padding-left: 2%;
+}
+
+.location-page-item{
+    margin: auto;
+}
+
+/* Formulario de contacto */
+
+.form-main-container{
+    background-color: lightsalmon;
+    display: block;
+    text-align: center;
+}
+
+.form-container{
+    margin:3vw;
+    width: 100%;
+    height: 35vw;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.form-item{
+    width: 50% ;
+    height: 2vw;
+    margin: .5vh;
+}
+
+#form-txt{
+
+    height: 15vw;
+}
+
+.form-btn{
+    width: 20%;
+    height: 5vh;
+    position: relative;
+    align-items: center;
+    margin: auto;
+}
+
+.mail-icon{
+    background-color: #222;
+}
+
+
+
+
 
 
 /* RESPONSIVE MOVIL */
@@ -200,6 +268,7 @@ header{
         
         max-height: 0;
         overflow: hidden;
+       
         transition: max-height .3s;
     }
 
@@ -222,7 +291,7 @@ header{
 
     #menuToggle:checked ~ ul {
         max-height: 350px;
-        
+        z-index: 1000;
     }
     .menu-icon i {
         font-size: 1.7em;
@@ -245,53 +314,61 @@ header{
         margin: 1%;
         background-color: red;
     }
-    .main-content{
+    /* .main-content{
         display: block;
+    
         background-color: blueviolet;
         width: 100%;
-        height: 90%;
+        height: 100%;
         margin-left: 0.625rem;
         margin-right: 0.625rem;
-    }
-    .main-content h2{
+    } */
+    /* .main-content h2{
         text-align: center;
-    }
+    } */
     
     .main-page-services{
         display: flex;
-        flex-wrap: nowrap;
         flex-direction: column;
+        flex-wrap: nowrap;
+        align-items:flex-start ;
         background-color: bisque;
         width: 100%;
-        height: 70%;
+        height: 100vh;
     
     }
+    /* Testeo */
+    .main-page-services-article-img{
+        display: none !important;
+    }
+
+
+    /* fin testeo */
+
     .main-page-services-article{
         display: flex;
         flex-direction: column;
         background-color: green ;
-        height: 100%;
+        height: 100vh;
         width: 100%;
-        margin-left: 0;
-        margin-right: 0;
-        margin-top: 1%;
+ 
         border: 1px solid black;
     
     }
     
-    .main-page-services-article-title{
+    /* .main-page-services-article-title{
         text-align: center;
     }
     .main-page-services-article-img{
         width: 100%;
-    }
+    } */
     
-    .main-page-services-article .btn-service{
+    /* .main-page-services-article .btn-service{
         position: relative;
         top: 1%;
         left: 30%;
     }
-    
+     */
 
 }
     
