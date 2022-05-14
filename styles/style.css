@@ -306,7 +306,7 @@ li{
 
            /* Desktop style  */
 
-    @media screen and (min-width:1025px) {
+    @media screen  and (min-width:1025px) {
 
 
 
@@ -346,7 +346,9 @@ li{
             background-color: antiquewhite;
             width: 100%;
             height: 5vh;
-            /* position:fixed; Ver como arreglar esto */
+            position:fixed;
+            z-index: 100;
+             /* Ver como arreglar esto */
         }
 
         .main-nav-bar{
@@ -393,9 +395,100 @@ li{
             height: 45vh;
             display: flex;
         }
-        
-    }
 
+        .box, h2{
+            text-align: center;
+            
+        }
+
+        .box  p{
+            text-align: justify;
+            padding: 20px;
+        }
+
+        .main-page-services{
+            margin-top: 2vh;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 50vh 50vh;
+        }
+
+        .main-page-services-article{
+
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+        }
+        .main-page-services-article p{
+            flex-grow: .5;
+            padding-left: 10px;
+            padding-right: 10px;
+            text-align: justify;
+        }
+        .btn{
+            margin: auto !important;
+
+        }
+
+        .location-page{
+            width: 100%;
+            margin-top: 3vh;
+            display: flex;
+            justify-content: space-between;
+
+        }
+        .location-info{
+            width: 50%;
+            margin: auto;
+            text-align: center;
+        }
+        .location-map{
+            width: 50%;
+            display: flex;
+            flex-wrap: nowrap;
+        }
+
+        .location-map iframe{
+            width: inherit;
+            margin: auto;
+            
+            padding-right: 20px;
+        }
+
+        .form-main-container{
+            width: 100%;
+            margin-top: 5vh;
+            display: flex;
+            justify-content: space-around;
+
+        }
+        .form-container{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+        }
+
+        .form-main-container h2{
+            width: 50%;
+            margin: auto;
+        }
+
+        .form-item{
+            margin-top: 1vh;
+            margin-bottom: 1vh;
+        }
+
+        .form-btn{
+            margin: auto;
+            width: 25%;
+            height: 15%;
+        }
+
+    }
 
 
     
