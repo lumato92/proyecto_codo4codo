@@ -16,43 +16,52 @@
                 <input type="checkbox"  id="menuToggle">
                 <label for="menuToggle" class="menu-icon"><i class="fa-solid fa-bars"></i></label>
                 <ul class="nav-opt">
-                    <li class="nav-opt-box"> <i class="fa-solid fa-house"></i> <a href="#"> Home</a></li>
+                    <li class="nav-opt-box"> <i class="fa-solid fa-house"></i> <a class="nav-link"href="#home"> Home</a></li>
 
                     <!-- Poner el li dentro del a??  -->
-                    <li class="nav-opt-box"> <i class="fa-solid fa-user-group"></i><a href="#">Nosotros</a></li>
-                    <li class="nav-opt-box"> <i class="fa-solid fa-location-dot"></i><a href="#">Ubicacion</a></li>
-                    <li class="nav-opt-box"> </i> <i class="fa-solid fa-envelope"></i><a href="#">Contacto</a></li>
+                    <li class="nav-opt-box"> <i class="fa-solid fa-user-group"></i><a class="nav-link"href="#about-me">Sobre Mi</a></li>
+                    <li class="nav-opt-box"> <i class="fa-solid fa-location-dot"></i><a class="nav-link"href="#projects-box">Proyectos</a></li>
+                    <li class="nav-opt-box"> </i> <i class="fa-solid fa-envelope"></i><a class="nav-link"href="#location-box">Contacto</a></li>
                 </ul>    
             </nav>
             <!-- NAV BAR RESPONSIVE -->
             <nav class="responsive-nav-bar">
                 <input type="checkbox"  id="menuToggle">
-                <label for="menuToggle" class="menu-icon"><i class="fa-solid fa-bars"></i></label>
+                <label for="menuToggle" class="menu-icon"><i class="fa-solid fa-bars" ></i></label>
                 <ul class="responsive-nav-opt">
-                    <li class="nav-opt-box"> <a href="#"> <i class="fa-solid fa-house"></i></a></li>
+                    <li class="nav-opt-box"> <a href="#home"> <i class="fa-solid fa-house"></i></a></li>
 
-                    <li class="nav-opt-box"> <a href="#"><i class="fa-solid fa-user-group"></i></a></li>
-                    <li class="nav-opt-box"> <a href="#"><i class="fa-solid fa-location-dot"></i></a></li>
+                    <li class="nav-opt-box"> <a href="#about-me"><i class="fa-solid fa-user-group"></i></a></li>
+                    <li class="nav-opt-box"> <a href="#projects-box"><i class="fa-solid fa-location-dot"></i></a></li>
                     <li class="nav-opt-box"> <a href="#"><i class="fa-solid fa-envelope"></i></a></li>
                 </ul>    
             </nav>
         </header>
     
 
-    <div class="main-content">    
+    <div class="main-content" id="home">    
         <div class="main-title">
-            <h1 >Titulo Principal</h1>
-
+            <div class="title">
+                <h1>Lucas Torrado</h1>
+                <p>Desarrollador</p>
+            </div>
+            <div class="title-image">
+                <img src="./assets/image-7.png" alt="persona_programando" sizes="" srcset="">
+            </div>
         </div>
 
+
+        <div id="about-me"></div>
+        <h2 class="content-title">Un poco sobre mi..</h2>      
         <div class="content">
+
             <div class="box">
-                <h2>Titulo</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit mollitia explicabo cum repellendus quia quisquam iusto ab sapiente, officia, adipisci officiis aut, porro veritatis a animi rem nam dolor eos!</p>
+                <h2>Sobre mi</h2>
+                <p>Hola! Me llamo Lucas Torrado soy un Desarrollador Web, apasionado por las nuevas tecnologias. Amante de la programacion y el desarrollo ,siempre con ganas de seguir aprendiendo</p>
 
             </div>
             <div class="box">
-                <h2>Titulo</h2>
+                <h2>Desarrollo Web</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis dolor fuga doloremque dignissimos harum totam animi? A corrupti labore voluptates excepturi deleniti temporibus enim autem repudiandae omnis dicta, aperiam illo!</p>
 
             </div>
@@ -63,29 +72,30 @@
         </div>
 
         <!-- <div class="main-content"> -->
-
-
+    
+        <div id="projects-box"></div>
+        <h2 class="projects-title">Algunos Proyectos..</h2>  
         <section class="main-page-services">
             <article class="main-page-services-article">
-                <h3 class="main-page-services-article-title">Servicio 1</h3>
+                <h3 class="main-page-services-article-title">Cronometro Js</h3>
                 <!-- <img class ="main-page-services-article-img" src="./assets/images/pexels-scott-webb-1029599.jpg" alt="imagen generica"> -->
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aliquid nam quod ex eaque placeat, maiores laudantium assumenda ut dolore rem molestias, tenetur omnis nulla officia, quos perferendis neque soluta?</p>
                 <button class="btn-service btn"><span>Learn More</span></button>
             </article>
             <article class="main-page-services-article">
-                <h3 class="main-page-services-article-title">Servicio 2</h3>
+                <h3 class="main-page-services-article-title">Calculadora React</h3>
                 <!-- <img class ="main-page-services-article-img" src="./assets/images/pexels-scott-webb-1029599.jpg" alt="imagen generica"> -->
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ducimus maxime, amet animi ea nobis maiores, natus sed porro, ad quibusdam tempora adipisci commodi earum. Totam debitis aliquid vel cumque!</p>
                 <button class="btn-service btn"><span>Learn More</span></button>
             </article>
             <article class="main-page-services-article">
-                <h3 class="main-page-services-article-title">Servicio 3</h3>
+                <h3 class="main-page-services-article-title">RGB GAME</h3>
                 <!-- <img class ="main-page-services-article-img" src="./assets/images/pexels-scott-webb-1029599.jpg" alt="imagen generica"> -->
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, ea labore! Voluptatum eaque quidem tenetur delectus nostrum fuga, hic aperiam, facilis aliquid tempore dolore accusantium fugiat repellat. Labore, officiis non.</p>
                 <button class="btn-service btn"><span>Learn More</span></button>
             </article>
             <article class="main-page-services-article">
-                <h3 class="main-page-services-article-title">Servicio 4</h3>
+                <h3 class="main-page-services-article-title">Price Watcher</h3>
                 <!-- <img class ="main-page-services-article-img"     src="./assets/images/pexels-scott-webb-1029599.jpg" alt="imagen generica"> -->
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, ea labore! Voluptatum eaque quidem tenetur delectus nostrum fuga, hic aperiam, facilis aliquid tempore dolore accusantium fugiat repellat. Labore, officiis non.</p>
                 <button class="btn-service btn"><span>Learn More</span></button>
@@ -93,7 +103,12 @@
 
         </section>
         <!-- </div> -->
+
+
+        <!-- CONTACTO  -->
         
+        <div id="location-box"></div>
+
         <div class="location-page">
             <div class="location-info">
             <h3>Veni a Conocernos</h3>
@@ -103,6 +118,8 @@
             <iframe class="location-page-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26277.16811654637!2d-58.42875321569815!3d-34.58782245079033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses-419!2sar!4v1650752134410!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
+        
+        <div id="contact-box"></div>
 
         <div class="form-main-container">
             <h2>Sigamos en Contacto</h2>
@@ -117,9 +134,6 @@
         </div>
     </div>
 
-
-    <img style="height:500px ; width : 300px" src="./assets/images/image-5-1.png" alt="" srcset="">
-    <img src="./assets/images/image-5.png" alt="" srcset="">
 </body>
 
 
